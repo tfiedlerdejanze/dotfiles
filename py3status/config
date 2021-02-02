@@ -1,0 +1,20 @@
+battery_level {
+  format = "{percent}%"
+}
+
+air_quality {
+  auth_token = "AUTH_TOKEN"
+  location = "Hamburg"
+}
+
+net_rate {
+  format = "Up {up} Down {down}"
+}
+
+order += "air_quality"
+order += "net_rate"
+order += "battery_level"
+order += "disk /home"
+order += "disk /"
+order += "time"
+
